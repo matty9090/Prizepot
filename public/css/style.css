@@ -1,0 +1,18 @@
+body {
+    font-size: 28px;
+}
+
+.prize {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 6px 0;
+    width: 100%;
+}
+
+.comp {
+    padding-top: 6px;
+}
+
+.comp h4, .comp h5 {
+    margin: 10px 0 4px 0;
+}

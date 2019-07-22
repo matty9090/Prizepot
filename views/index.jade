@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .container
+        .row
+            .col.s6
+                h3= title
+
+            .col.s6
+                span.right.comp
+                    h5 Next comp
+                    h4
+                        a(href='https://www.worldcubeassociation.org/competitions/' + comp.id, target='_blank') #{comp.name}
+
+        hr
+
+        .row
+            each event in events
+                .col.s12
+                    h3= event.name
+                
+                each milestone in event.milestones
+                    .col.l10.m7= milestone.name
+
+                    .col.l2.m5
+                        a.btn-large.waves-effect.waves-light.prize £#{milestone.pot}
